@@ -5,8 +5,9 @@
 }
 
 .ProductTable tr th {
-    background-color: rgb(175, 175, 175, 0.3);
+    background-color: rgba(207, 207, 207, 0.3);
     height: 50px;
+    color: rgb(104, 136, 111);
 }
 
 .ProductTable tr td {

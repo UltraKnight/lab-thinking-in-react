@@ -14,13 +14,13 @@ export default class FilterableProductTable extends Component {
         if(filterOnStock) {
             this.setState({
                 products: products.filter(product => {
-                    return product.name.toLowerCase().includes(filterName) && product.stocked
+                    return product.name.toLowerCase().includes(filterName.toLowerCase()) && product.stocked
                 })
             })
         } else {
             this.setState({
                 products: products.filter(product => {
-                    return product.name.toLowerCase().includes(filterName)
+                    return product.name.toLowerCase().includes(filterName.toLowerCase())
                 })
             })
         }
