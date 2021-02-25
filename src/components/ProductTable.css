@@ -1,0 +1,15 @@
+.ProductTable {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.ProductTable tr th {
+    background-color: rgb(175, 175, 175, 0.3);
+    height: 50px;
+}
+
+.ProductTable tr td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(175, 175, 175, 0.3);
+}

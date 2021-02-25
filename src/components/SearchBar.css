@@ -1,0 +1,19 @@
+.SearchBar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 3px 5px;
+    width: 80%;
+    font-size: 1.2rem;
+}
