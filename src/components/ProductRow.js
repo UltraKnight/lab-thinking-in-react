@@ -5,7 +5,7 @@ export default class ProductRow extends Component {
         let {prodName, prodPrice} = this.props;
         return (
             <tr>
-                <td>{prodName}</td>
+                <td style={this.props.style}>{prodName}</td>
                 <td>{prodPrice}</td>
             </tr>
         )

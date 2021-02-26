@@ -16,7 +16,9 @@ export default class ProductTable extends Component {
                 <tbody>
                 {
                     products.map((prod, i) => {
-                        return <ProductRow key={i} prodName={prod.name} prodPrice={prod.price} />
+                        return prod.stocked
+                        ? <ProductRow key={i} prodName={prod.name} prodPrice={prod.price} />
+                        : <ProductRow style={{color: 'red'}} key={i} prodName={prod.name} prodPrice={prod.price} />
                     })
                 }
                 </tbody>
