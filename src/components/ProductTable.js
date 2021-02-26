@@ -15,10 +15,10 @@ export default class ProductTable extends Component {
                 </thead>
                 <tbody>
                 {
-                    products.map((prod, i) => {
-                        return prod.stocked
-                        ? <ProductRow key={i} prodName={prod.name} prodPrice={prod.price} />
-                        : <ProductRow style={{color: 'red'}} key={i} prodName={prod.name} prodPrice={prod.price} />
+                    products.map((product, i) => {
+                        return product.stocked
+                        ? <ProductRow key={i} {...product} />
+                        : <ProductRow style={{color: 'red'}} key={i} {...product} />
                     })
                 }
                 </tbody>
